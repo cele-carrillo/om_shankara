@@ -1,10 +1,6 @@
 # Site settings
 title: Om Shankara
 email: info@omshankara.com
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://www.omshankara.com" # the base hostname & protocol for your site
 twitter_username: jekyllrb
@@ -12,3 +8,67 @@ github_username:  argos83
 
 # Build settings
 markdown: kramdown
+permalink: /:title/
+
+# Default language
+lang: en
+
+languages:
+  en: English
+  es: Español
+
+# Translations
+t:
+  en:
+    description: > # this means to ignore newlines
+      Write an awesome description for your new site here. You can edit this
+      line in _config.yml. It will appear in your document head meta (for
+      Google search results).
+    posts: Posts
+
+  es:
+    description: > # this means to ignore newlines
+      Tremenda description del sitio aca. Editar esta linea en
+      el _config.yml. Aparece en el document head meta (para resultados
+      de google search).
+    posts: Publicaciones
+
+# Defaults
+defaults:
+  - 
+    scope:
+      path: ""
+      type: posts
+    values:
+      is_post: true
+
+  - 
+    scope:
+      path: ""
+      type: pages
+    values:
+      in_menu: true
+  -
+    scope:
+      path: _posts/en
+    values:
+      layout: post
+      lang: en
+  -
+    scope:
+      path: _posts/es
+    values:
+      layout: post
+      lang: es
+  -
+    scope:
+      path: en
+    values:
+      layout: page
+      lang: en
+  -
+    scope:
+      path: es
+    values:
+      layout: page
+      lang: es

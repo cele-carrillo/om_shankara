@@ -1,4 +1,28 @@
 /**
+* Custom
+*/
+
+
+
+
+
+.site-nav .trigger .lang-selector {
+    display: block;
+    float: right;
+
+    .lang-choice {
+       margin-left: 5px;
+        &:first-child {
+            margin-left: 40px;
+        }
+    }
+
+    .en:lang(en), .es:lang(es) {
+        font-weight: bold;
+    }
+}
+
+/**
  * Site header
  */
 .site-header {
@@ -24,6 +48,7 @@
 }
 
 .site-nav {
+
     float: right;
     line-height: 56px;
 

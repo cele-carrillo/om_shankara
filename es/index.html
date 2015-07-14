@@ -1,0 +1,25 @@
+---
+# Note: This file in /en/index.html and /es/index.html is the same file (a symlink)
+# This not require translations (at least for now)
+
+layout: default
+key: home
+---
+
+<div class="home">
+
+  <h1 class="page-heading">{{ site.t[page.lang].posts }}</h1>
+  {% assign posts=site.posts | where:"lang", page.lang %}
+  <ul class="post-list">
+    {% for post in posts %}
+      <li class="lang">
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+        <h2>
+          <a class="post-link {{ post.lang }}" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+      </li>
+    {% endfor %}
+  </ul>
+
+</div>
