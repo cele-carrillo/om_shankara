@@ -2,13 +2,7 @@
 title: Om Shankara
 email: info@omshankara.com
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://www.omshankara.com" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  argos83
-
-# Build settings
-markdown: kramdown
-permalink: /:title/
+url: http://www.omshankara.com
 
 # Default language
 lang: en
@@ -17,58 +11,132 @@ languages:
   en: English
   es: Español
 
+# Color settings (hex-codes without the leading hash-tag)
+color:
+  primary-dark: '#000000'
+  links: '#219ab3'
+
+# Head settings
+home_text_1: 
+home_text_2: Shankara
+
+maps_api_key: AIzaSyAOoTRdEUmyIGq8p2zVNqAa8-n1VEtFs5s
+
+# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
+social: []
+#  - title: twitter
+#    url: https://twitter.com/SBootstrap
+#  - title: facebook
+#    url:
+#  - title: stack-overflow
+#    url: http://stackoverflow.com/questions/tagged/jekyll
+#  - title: bitbucket
+#    url: http://bitbucket.org/jekyll
+#  - title: github
+#    url: https://github.com/IronSummitMedia/startbootstrap
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+
 # Translations
 t:
   en:
     description: > # this means to ignore newlines
-      Write an awesome description for your new site here. You can edit this
-      line in _config.yml. It will appear in your document head meta (for
-      Google search results).
-    posts: Posts
+      Rolfing® Structural Integration and Yoga in Stockholm. If you have any questions or comments send an email to info@omshankara.com. I'm located right by Skarpnäck's subway station.
+    intro:
+      - Rolfing & Yoga in Stockholm
+
+    menu_yoga: Yoga
+    menu_rolfing: Rolfing
+    menu_about: About
+    menu_contact: Contact
+
+    title_yoga: "Yoga is what happens to you, not what you do"
+    title_rolfing: "Rolfing Structural Integration"
+    title_about: About me
+    title_contact: Contact
+
+    content_yoga:
+      - "Yogestalt is the type of Yoga that I practice, study and teach, and is the name given to the practice of various forms of Yoga in the light of Gestalt therapy. Practice through which a process of transformation starts, in which opposites, as well as the tension between them, become apparent. This allows us to know and integrate the opposites in ourselves. Some of the opposites we try to integrate are: flexibility and rigidity, strength and weakness, contraction and expansion, dispersal and concentration, fantasy and reality, lack and presence, discomfort and comfort, what’s open and what’s closed, what’s free and what’s oppressed, pain and pleasure, apathy and vitality, courage and shame, what’s rejected and what’s accepted, anger and serenity, joy and sorrow, anguish and relief, restlessness and peace, fear and love."
+      - "During the practice, different ways of breathing are explored, as well as various forms of stretching and strengthening. We also attempt to generate, in various different ways, stimuli on the organic and energetic aspects, and to deepen the contemplative aspect by using sound vibrations and symbolic gestures. Finally, we aim for the integration of our oneiric and vigil worlds. Always with the intention of being present, putting into practice the contemplative aspect that yoga offers to deepen the perception of the here and now; contemplating and observing ourselves, as proposed by the Gestalt therapy, in a non-interpretative and essentially descriptive way, focusing on what is being perceived and felt here and now. This subjective perception is essential, and invites the practitioner to trust what he feels, rediscovering organic ways of practicing, which frees the roads that connect our bodily, emotional, mental and intuitive aspects."
+      - "The practice guides us in finding our innate potential, starting the journey towards our own center, regaining the ability to trust ourselves. This experience, which is unique, diverse and personal, strengthens our confidence in the resources available to us, helping us live in a genuine way, free of conditionings."
+      - "If you want to schedule a trial class, or if you have questions, <a href='#contact'>contact me</a>."
+
+    content_rolfing:
+      - "Rolfing® Structural Integration, originally developed by Dr. Ida Rolf, PhD, is based on the premise that the quality of life and well-being depend in part on the person’s capacity to adapt to the field of gravity. Rolfing is an approach to helping the person live and function with greater ease, grace and efficiency in the field of gravity. In particular, Rolfing helps us use gravity as an ally in the manifestation of the human upright posture, as well as in the uniquely human activities and place in the world that uprightness permits."
+      - "Rolfers maintain that the human structure is not fixed, but rather is highly mutable. Structure can deteriorate over time, due to injury, trauma, habits and repetitive patterns that cause inhibitions in movement, which can become chronic restrictions in tissue. However, structures can also change for the better, at almost any point in life."
+      - "Recognizing that the person is a unified structural and functional whole, Rolfers use the term integration to speak to the relationships among the parts to each other and to the whole. Integration refers to harmonious and efficient relationships among all the parts and subsystems that constitute the whole human organism, as well as between the person and the environment. Rolfing accomplishes this integration by addressing imbalances in the body’s connective tissue matrix, as well as by helping the client find more functional options regarding patterns of movement, perception and cognition."
+      - "Ida P. Rolf designed a basic strategy to deliver Structural Integration as a series of 10 sessions. Generally, but not necessarily, a client’s initial Rolfing series is based on Ida P. Rolf’s formal 10-session strategy. However, the number and precise content of a particular client’s session is determined by the client’s needs and best interests, as well as by the practitioner’s level of training and experience."
+      - "If you have questions, or if you want to book a session, <a href='#contact'>contact me</a>."
+
+    content_about:
+      - "My name is Celeste, I'm from Argentina and I live in Stockholm. I started practicing yoga in 2009, and it fascinated me from the very first moment; from then on I kept practicing and discovering different schools. I practiced Hatha yoga in Mendoza, and Iyengar and Swasthya yoga in Buenos Aires, and in 2012 I received the certification as Yoga instructor from the Yoga Kai Institute, in Buenos Aires, Argentina. During that year, I also practiced Yogestalt for the very first time, and I felt that I had finally found what I was looking for. This way of practicing totally changed my view and understanding of Yoga, and I decided to do the Yogestalt training course with my teacher, Ricardo Risso Patron, in 2013, in Buenos Aires, Argentina. Since then I am studying with him, practicing, learning, deepening my knowledge and understanding."
+      - "I discovered Rolfing by chance in 2013, while reading a book on Gestalt therapy. I was instantly drawn to it, and I decided to see what it was all about. I started reading a about it, and taking Rolfing sessions. What a  wonderful discovery! I was so interested in it that I decided to start studying in the European Rolfing Association, in Munich, Germany, where I completed my training as a Certified Rolfer."
+      - "My wish is to help others, with the tools that these two practices have given me, and to share the integrating vision that both have in common."
+
+    content_contact:
+      - "If you want to schedule a Rolfing session or a Yoga class, or if you have any questions or comments, fill in the contact form. Or just send an email to <a href='mailto:info@omshankara.com'>info@omshankara.com</a>. I'm located right by Skarpnäck's subway station, in Stockholm."
+
+    contact_form:
+      name: Name
+      email: Email
+      question: Question
+      subject: Enquiry OmShankara.com
+      submit: Submit
+      submit_ok_title: "Thank you!"
+      submit_ok_text: "Your enquiry was sent successfully, I'll contact you shortly."
+      submit_fail_title: "Oops!"
+      submit_fail_text: "Your enquiry could not be sent, try again later or send me an email to <a href='mailto:info@omshankara.com'>info@omshankara.com</a>."
+      submit_close_button: "OK"
 
   es:
     description: > # this means to ignore newlines
-      Tremenda description del sitio aca. Editar esta linea en
-      el _config.yml. Aparece en el document head meta (para resultados
-      de google search).
-    posts: Publicaciones
+      Rolfing® Integración Estructural y Yoga en Estocolmo. Si tenés preguntas y querés conocer más, escribime a info@omshankara.com. Estoy a pocos metros de la estación de metro de Skarpnäck.
 
-# Defaults
-defaults:
-  - 
-    scope:
-      path: ""
-      type: posts
-    values:
-      is_post: true
+    intro:
+      - Rolfing y Yoga en Estocolmo
 
-  - 
-    scope:
-      path: ""
-      type: pages
-    values:
-      in_menu: true
-  -
-    scope:
-      path: _posts/en
-    values:
-      layout: post
-      lang: en
-  -
-    scope:
-      path: _posts/es
-    values:
-      layout: post
-      lang: es
-  -
-    scope:
-      path: en
-    values:
-      layout: page
-      lang: en
-  -
-    scope:
-      path: es
-    values:
-      layout: page
-      lang: es
+    menu_yoga: Yoga
+    menu_rolfing: Rolfing
+    menu_about: Acerca
+    menu_contact: Contacto
+
+    title_yoga: "Yoga es lo que te pasa, no lo que hacés"
+    title_rolfing: "Rolfing Integración Estructural"
+    title_about: Acerca de mi
+    title_contact: Contacto
+
+    content_yoga:
+      - "Yogestalt es el tipo de Yoga que yo practico, estudio y enseño, y es el nombre que recibe la práctica de las diversas formas de Yoga bajo la luz de la Terapia Gestalt. Práctica a través de la cual se inicia un proceso de transformación en el que los opuestos se hacen presentes, así como también la tensión que existe entre ellos. Esto nos permite conocer e integrar los opuestos en nosotros mismos. Algunos de los opuestos que intentamos integrar son la flexibilidad con la rigidez, la fuerza con la debilidad, la contracción con la ampliación, la dispersión con la concentración, la fantasía con la realidad, la ausencia con la presencia, la incomodidad con la comodidad, lo abierto con lo cerrado, lo oprimido con lo liberado, el dolor con el placer, la apatía con la vitalidad, la vergüenza con el coraje, lo rechazado con lo aceptado, la ira con la serenidad, la alegría con la tristeza, la angustia con el alivio, la intranquilidad con la tranquilidad, el miedo con el amor."
+      - "En la práctica se proponen diferentes maneras de respirar, y se invita a descubrir y experimentar diversas formas de estirarse y fortalecerse, a practicar variadas maneras de generar estímulos sobre el aspecto orgánico y energético, a profundizar el aspecto contemplativo, a usar vibraciones sonoras, a profundizar en gestos simbólicos, y a integrar el mundo onírico con el de la vigilia. Siempre con la intención de estar presente, poniendo en práctica el aspecto contemplativo que el Yoga ofrece para profundizar en el aquí-ahora; contemplándonos, como propone la Terapia Gestalt, de forma esencialmente descriptiva, no interpretativa, poniendo el foco sobre lo que se está percibiendo y sintiendo en el momento. Esta percepción subjetiva es fundamental, e invita al practicante a que confíe en lo que siente, redescubriendo formas orgánicas de practicar, que liberan los caminos que conectan nuestro aspecto corporal, con el emocional, con el mental y el intuitivo."
+      - "La práctica nos lleva a que nos encontremos con nuestro potencial innato, iniciando nuestro viaje hacia nuestro propio centro, recuperando la posibilidad de apoyarnos en nosotros mismos. Esta experiencia, que es única, diversa y personal, fortalece nuestra confianza en los recursos de los que disponemos como personas, intentando vivir de una manera auténtica y libre de condicionamientos."
+      - "Si te interesa agendar una clase de prueba, o si tenés preguntas, <a href='#contact'>contactame</a>."
+
+    content_rolfing:
+      - "Rolfing® Integración Estructural, originalmente desarrollado por la Dra. Ida Rolf, PhD, se basa en la premisa de que la calidad de vida y el bienestar dependen en parte de la capacidad de la persona para adaptarse al campo de gravedad. Rolfing es un enfoque para ayudar a la persona a vivir con mayor facilidad, gracia y eficiencia en el campo de la gravedad. En particular, Rolfing nos ayuda a utilizar la gravedad como un aliado en la manifestación de la postura erguida, así como en nuestras actividades."
+      - "Los practicantes de Rolfing (o Rolfers) sostienen que la estructura humana no es fija, sino que es altamente mutable. Dicha estructura puede deteriorarse con el tiempo, debido a lesiones, traumatismos, hábitos y patrones repetitivos que causan inhibiciones en el movimiento, y que pueden convertirse en restricciones crónicas en los tejidos. Sin embargo, las estructuras también pueden cambiar para mejor, en casi cualquier momento de la vida."
+      - "Reconociendo que la persona es un todo estructural y funcional unificado, los Rolfers utilizan el término integración para hablar de las relaciones de las partes entre sí y con el todo. Integración refiere a las relaciones armoniosas y eficientes entre todas las partes y subsistemas que constituyen el organismo humano, así como entre la persona y el medio ambiente. Rolfing logra esta integración al abordar los desequilibrios en la matriz de tejido conectivo del cuerpo, así como al ayudar al cliente a encontrar opciones más funcionales respecto a los patrones de movimiento, percepción y cognición."
+      - "Ida P. Rolf diseñó una estrategia básica para ofrecer Integración Estructural como una serie de 10 sesiones. Por lo general, pero no necesariamente, la serie inicial de Rolfing brindada a un cliente se basa en la estrategia formal de 10 sesiones de Ida P. Rolf. Sin embargo, el número y el contenido exacto de cada sesión de un cliente en particular están determinados por las necesidades y los intereses del cliente, así como por la formación y experiencia del Rolfer."
+      - "Si te interesa agendar una sesión de prueba, o si tenés preguntas, <a href='#contact'>contactame</a>."
+
+    content_about: 
+      - "Mi nombre es Celeste, soy Argentina y vivo en Estocolmo. Empecé a practicar Yoga en el año 2009, y me fascinó desde el primer momento; desde ahí seguí practicando constantemente, descubriendo distintas escuelas. Hice Hatha yoga en Mendoza, Iyengar y Swasthya yoga en Buenos Aires, y en el año 2012 recibí la certificación como instructora de Yoga por parte del Instituto Yoga Kai, de Buenos Aires, Argentina. En el mismo año hice mi primera práctica de Yogestalt, y sentí que por fin había encontrado lo que estaba buscando. Esta manera de practicar cambió totalmente mi visión y comprensión del Yoga, y decidí hacer el curso de formación en Yogestalt con mi profesor, Ricardo Risso Patrón, en el año 2013, en Buenos Aires, Argentina. Desde entonces que estoy estudiando con él, practicando, aprendiendo, profundizando."
+      - "Al Rolfing lo descubrí de casualidad, en el año 2013, mientras leía un libro sobre terapia Gestalt. Me interesó de inmediato, y decidí ver de qué se trataba, así que empecé a leer un poco sobre el tema, y a tomar sesiones de Rolfing. Que descubrimiento tan maravilloso! Quedé tan enganchada que decidí empezar a estudiar en la Asociación Europea de Rolfing (European Rolfing Association), en Munich, Alemania, donde completé mi formación como Rolfer certificada."
+      - "Mi deseo es ayudar a otras personas, a partir las herramientas que me han brindado estas dos prácticas, y poder compartir la visión integradora que ambas proponen."
+
+    content_contact:
+      - "Si querés agendar una sesión de Rolfing o una clase de Yoga, o si tenés preguntas y querés conocer más, completá el formulario con tu consulta. O escribime directamente a <a href='mailto:info@omshankara.com'>info@omshankara.com</a>. Estoy a pocos metros de la estación de metro de Skarpnäck, en Estocolmo."
+
+    contact_form:
+      name: Nombre
+      email: Email
+      question: Consulta
+      subject: Consulta OmShankara.com
+      submit: Enviar
+      submit_ok_title: "Gracias!"
+      submit_ok_text: "Tu consulta fue enviada exitosamente, me pondré en contacto a la brevedad."
+      submit_fail_title: "Disculpá"
+      submit_fail_text: "No se pudo enviar tu consulta, intentá nuevamente o escribime a <a href='mailto:info@omshankara.com'>info@omshankara.com</a>."
+      submit_close_button: "OK"

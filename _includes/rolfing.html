@@ -1,0 +1,13 @@
+    <!-- Rolfing Section -->
+    <section id="rolfing" class="content-section text-justify">
+        <div class="rolfing-section">
+            <div class="container-fluid">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <h2>{{ site.t[page.lang].title_rolfing }}</h2>
+                    {% for paragraph in site.t[page.lang].content_rolfing %}
+                        <p>{{ paragraph }}</p>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </section>

@@ -1,0 +1,13 @@
+    <!-- Yoga Section -->
+    <section id="yoga" class="content-section text-justify">
+        <div class="yoga-section">
+            <div class="container-fluid">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <h2>{{ site.t[page.lang].title_yoga }}</h2>
+                    {% for paragraph in site.t[page.lang].content_yoga %}
+                        <p>{{ paragraph }}</p>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </section>
