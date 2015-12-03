@@ -272,6 +272,9 @@ a:focus {
     width: 100%;
     color: #fff;
 }
+.content-section h2 {
+    text-align: left;
+}
 
 .yoga-section {
     background-color: {{ site.color.primary-dark }};
