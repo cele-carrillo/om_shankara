@@ -428,7 +428,8 @@ select {
     padding: 0.5em;
     font-size: 15px;
     line-height: 1.2em;
-    width: 500px;
+    max-width: 500px;
+    width: 100%;
     background: #444;
     color: #fff;
     font-family: helvetica, sans-serif;
