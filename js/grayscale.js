@@ -1,8 +1,4 @@
-/*!
- * Start Bootstrap - Grayscale Bootstrap Theme (http://startbootstrap.com)
- * Code licensed under the Apache License v2.0.
- * For details, see http://www.apache.org/licenses/LICENSE-2.0.
- */
+
 
 // jQuery to keep track of the current section when switching languages
 $("ul.nav").on('activate.bs.scrollspy', function () {
@@ -18,10 +14,20 @@ $("ul.nav").on('activate.bs.scrollspy', function () {
 $(document).ready(function() {
     $('#form-contact').submit(function(event) {
         $form = $(this);
+        var name = $('input[name=name]');
+        var email = $('input[name=_replyto]');
+        var question = $('textarea[name=question]');
+
+        event.preventDefault();
+
+        if (! validateForm(name, email, question)){
+            return;
+        }
+
         var formData = {
-            'name'         : $('input[name=name]').val(),
-            'email'        : $('input[name=_replyto]').val(),
-            'question'     : $('textarea[name=question]').val(),
+            'name'         : name.val(),
+            'email'        : email.val(),
+            'question'     : question.val(),
             '_gotcha'      : $('input[name=_gotcha]').val(),
             '_subject'     : $('input[name=_subject]').val()
         };
@@ -35,6 +41,9 @@ $(document).ready(function() {
             .done(function(data) {
                 var inst = $('[data-remodal-id=modal-success]').remodal();
                 inst.open();
+                name.val("");
+                email.val("");
+                question.val("");
             })
             .fail(function() {
                 var inst = $('[data-remodal-id=modal-fail]').remodal();
@@ -43,6 +52,52 @@ $(document).ready(function() {
         event.preventDefault();
     });
 });
+
+function validateForm(name, email, question){
+    var valid = true;
+    var invalidClass = 'invalid-field';
+
+    if (isEmpty(name.val())) {
+        valid = false;
+        name.addClass(invalidClass);
+    }
+    else{
+        name.removeClass(invalidClass);
+    }
+
+    if (!validateEmail(email.val())){
+        valid = false;
+        email.addClass(invalidClass);
+    }
+    else{
+        email.removeClass(invalidClass);
+    }
+
+    if (isEmpty(question.val())) {
+        valid = false;
+        question.addClass(invalidClass);
+    }
+    else{
+        question.removeClass(invalidClass);
+    }
+    return valid;
+}
+
+function isEmpty(str){
+    var re = /^\s*$/;
+    return re.test(str);
+}
+
+function validateEmail(email) {
+    var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(email);
+}
+
+/*!
+ * Start Bootstrap - Grayscale Bootstrap Theme (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
 
 // jQuery to collapse the navbar on scroll
 $(window).scroll(function() {

@@ -467,3 +467,8 @@ input[type=text] {
 input[type=submit] {
     width: auto;
 }
+
+.invalid-field {
+    outline-color: #ff0000;
+    border: 2px solid #f00;
+}
