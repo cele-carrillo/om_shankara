@@ -21,6 +21,9 @@ home_text_1:
 home_text_2: Shankara
 
 maps_api_key: AIzaSyAOoTRdEUmyIGq8p2zVNqAa8-n1VEtFs5s
+map_lat: "-33.8657378"
+map_lng: "151.2039991"
+map_zoom: 15
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social: []
@@ -44,7 +47,7 @@ permalink: pretty
 t:
   en:
     description: > # this means to ignore newlines
-      Rolfing® Structural Integration and Yoga in Stockholm. If you have any questions or comments send an email to info@omshankara.com. I'm located right by Skarpnäck's subway station.
+      Rolfing® Structural Integration and Yoga in Stockholm. If you have any questions or comments send an email to info@omshankara.com. I'm located in the heart of Sydney.
     intro:
       - Rolfing & Yoga in Stockholm
 
@@ -80,7 +83,7 @@ t:
       - "My wish is to help others, with the tools that these two practices have given me, and to share the integrating vision that both have in common."
 
     content_contact:
-      - "If you want to schedule a Rolfing session or a Yoga class, or if you have any questions or comments, fill in the contact form. Or just send an email to <a href='mailto:info@omshankara.com'>info@omshankara.com</a>. I'm located right by Skarpnäck's subway station, in Stockholm."
+      - "If you want to schedule a Rolfing session or a Yoga class, or if you have any questions or comments, fill in the contact form. Or just send an email to <a href='mailto:info@omshankara.com'>info@omshankara.com</a>. I'm located in the heart of Sydney, Australia."
 
     contact_form:
       name: Name
@@ -96,7 +99,7 @@ t:
 
   es:
     description: > # this means to ignore newlines
-      Rolfing® Integración Estructural y Yoga en Estocolmo. Si tenés preguntas y querés conocer más, escribime a info@omshankara.com. Estoy a pocos metros de la estación de metro de Skarpnäck.
+      Rolfing® Integración Estructural y Yoga en Estocolmo. Si tenés preguntas y querés conocer más, escribime a info@omshankara.com. Estoy ubicada en el corazón de Sydney.
 
     intro:
       - Rolfing y Yoga en Estocolmo
@@ -133,7 +136,7 @@ t:
       - "Mi deseo es ayudar a otras personas, a partir de las herramientas que me han brindado estas dos prácticas, y poder compartir la visión integradora que ambas proponen."
 
     content_contact:
-      - "Si querés agendar una sesión de Rolfing o una clase de Yoga, o si tenés preguntas y querés conocer más, completá el formulario con tu consulta. O escribime directamente a <a href='mailto:info@omshankara.com'>info@omshankara.com</a>. Estoy a pocos metros de la estación de metro de Skarpnäck, en Estocolmo."
+      - "Si querés agendar una sesión de Rolfing o una clase de Yoga, o si tenés preguntas y querés conocer más, completá el formulario con tu consulta. O escribime directamente a <a href='mailto:info@omshankara.com'>info@omshankara.com</a>. Estoy ubicada en el corazón de Sydney, Australia."
 
     contact_form:
       name: Nombre

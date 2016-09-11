@@ -1,4 +1,5 @@
-
+---
+---
 
 // jQuery to keep track of the current section when switching languages
 $("ul.nav").on('activate.bs.scrollspy', function () {
@@ -133,10 +134,10 @@ function init() {
     // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
     var mapOptions = {
         // How zoomed in you want the map to start at (always required)
-        zoom: 15,
+        zoom: {{ site.map_zoom }},
 
         // The latitude and longitude to center the map (always required)
-        center: new google.maps.LatLng(59.2668, 18.1333),
+        center: new google.maps.LatLng({{ site.map_lat }}, {{ site.map_lng }}),
 
         // Disables the default Google Maps UI components
         disableDefaultUI: true,
@@ -264,7 +265,7 @@ function init() {
 
     // Custom Map Marker Icon - Customize the map-marker.png file to customize your icon
     var image = '/img/map-marker.png';
-    var myLatLng = new google.maps.LatLng(59.2668, 18.1333);
+    var myLatLng = new google.maps.LatLng({{ site.map_lat }}, {{ site.map_lng }});
     var beachMarker = new google.maps.Marker({
         position: myLatLng,
         map: map,
