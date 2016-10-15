@@ -21,9 +21,9 @@ home_text_1:
 home_text_2: Shankara
 
 maps_api_key: AIzaSyAOoTRdEUmyIGq8p2zVNqAa8-n1VEtFs5s
-map_lat: "-33.8657378"
-map_lng: "151.2039991"
-map_zoom: 15
+map_lat: "-33.873678"
+map_lng: "151.2233229"
+map_zoom: 16
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social: []
