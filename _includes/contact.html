@@ -1,52 +1,56 @@
     <!-- Contact Section -->
     <section id="contact" class="content-section text-justify">
+      <div id="contact-wrapper">
+        <div id="map"></div>
         <div class="contact-section">
             <div class="container-fluid">
                 <div class="col-lg-8 col-lg-offset-2">
+                  <div class="rounded-corners">
                     <h2>{{ site.t[page.lang].title_contact }}</h2>
                     {% for paragraph in site.t[page.lang].content_contact %}
-                        <p>{{ paragraph }}</p>
+                      <p>{{ paragraph }}</p>
                     {% endfor %}
+                  </div>
+                  <p></p>
+                  <ul class="list-inline banner-social-buttons">
+                      {% for network in site.social %}
+                      <li>
+                          <a href="{{ network.url }}" class="btn btn-default btn-lg"><i class="fa fa-{{ network.title }} fa-fw"></i> <span class="network-name">{{ network.title }}</span></a>
+                      </li>
+                      {% endfor %}
+                  </ul>
+                  <div class"contact-form" id="contact-form" style="display:block;">
+                      <form action="//formspree.io/{{ site.email }}" id="form-contact">
+                          <fieldset>
+                              <input type="text" name="name" placeholder="{{ site.t[page.lang].contact_form.name }}">
+                              <input type="email" name="_replyto" placeholder="{{ site.t[page.lang].contact_form.email }}">
+                              <textarea name="question" placeholder="{{ site.t[page.lang].contact_form.question }}"></textarea>
+                          </fieldset>
+                          <input type="hidden" name="_subject" value="{{ site.t[page.lang].contact_form.subject }}" />
+                          <input type="text" name="_gotcha" style="display:none" />
+                          <input type="submit" name="submit" value="{{ site.t[page.lang].contact_form.submit }}" class="btn btn-default btn-lg">
+                      </form>
+                  </div>
+                  <div class="remodal" data-remodal-id="modal-success">
+                    <button data-remodal-action="close" class="remodal-close"></button>
+                    <h2>{{ site.t[page.lang].contact_form.submit_ok_title }}</h2>
                     <p>
+                      {{ site.t[page.lang].contact_form.submit_ok_text }}
                     </p>
-                    <ul class="list-inline banner-social-buttons">
-                        {% for network in site.social %}
-                        <li>
-                            <a href="{{ network.url }}" class="btn btn-default btn-lg"><i class="fa fa-{{ network.title }} fa-fw"></i> <span class="network-name">{{ network.title }}</span></a>
-                        </li>
-                        {% endfor %}
-                    </ul>
-                    <div class"contact-form" id="contact-form" style="display:block;">
-                        <form action="//formspree.io/{{ site.email }}" id="form-contact">
-                            <fieldset>
-                                <input type="text" name="name" placeholder="{{ site.t[page.lang].contact_form.name }}">
-                                <input type="email" name="_replyto" placeholder="{{ site.t[page.lang].contact_form.email }}">
-                                <textarea name="question" placeholder="{{ site.t[page.lang].contact_form.question }}"></textarea>
-                            </fieldset>
-                            <input type="hidden" name="_subject" value="{{ site.t[page.lang].contact_form.subject }}" />
-                            <input type="text" name="_gotcha" style="display:none" />
-                            <input type="submit" name="submit" value="{{ site.t[page.lang].contact_form.submit }}" class="btn btn-default btn-lg">
-                        </form>
-                    </div>
-                    <div class="remodal" data-remodal-id="modal-success">
-                      <button data-remodal-action="close" class="remodal-close"></button>
-                      <h1>{{ site.t[page.lang].contact_form.submit_ok_title }}</h1>
-                      <p>
-                        {{ site.t[page.lang].contact_form.submit_ok_text }}
-                      </p>
-                      <br>
-                      <button data-remodal-action="confirm" class="remodal-confirm">{{ site.t[page.lang].contact_form.submit_close_button }}</button>
-                    </div>
-                    <div class="remodal" data-remodal-id="modal-fail">
-                      <button data-remodal-action="close" class="remodal-close"></button>
-                      <h1>{{ site.t[page.lang].contact_form.submit_fail_title }}</h1>
-                      <p>
-                        {{ site.t[page.lang].contact_form.submit_fail_text }}
-                      </p>
-                      <br>
-                      <button data-remodal-action="confirm" class="remodal-confirm">{{ site.t[page.lang].contact_form.submit_close_button }}</button>
-                    </div>
+                    <br>
+                    <button data-remodal-action="confirm" class="remodal-confirm">{{ site.t[page.lang].contact_form.submit_close_button }}</button>
+                  </div>
+                  <div class="remodal" data-remodal-id="modal-fail">
+                    <button data-remodal-action="close" class="remodal-close"></button>
+                    <h2>{{ site.t[page.lang].contact_form.submit_fail_title }}</h2>
+                    <p>
+                      {{ site.t[page.lang].contact_form.submit_fail_text }}
+                    </p>
+                    <br>
+                    <button data-remodal-action="confirm" class="remodal-confirm">{{ site.t[page.lang].contact_form.submit_close_button }}</button>
+                  </div>
                 </div>
             </div>
         </div>
+      </div>
     </section>

@@ -122,7 +122,7 @@
 }
 
 .remodal-close:before {
-  font-family: Arial, "Helvetica CY", "Nimbus Sans L", sans-serif !important;
+  font-family: futura-pt, Arial, "Helvetica CY", "Nimbus Sans L", sans-serif !important;
   font-size: 25px;
   line-height: 35px;
 
@@ -143,7 +143,7 @@
 .remodal-confirm,
 .remodal-cancel {
   font: inherit;
-
+  font-size: 18px;
   display: inline-block;
   overflow: visible;
 
@@ -159,17 +159,19 @@
   text-decoration: none;
 
   border: 0;
+  border-radius: 6px;
   outline: 0;
 }
 
 .remodal-confirm {
   color: #fff;
-  background: #81c784;
+  background: {{ site.color.links }};
 }
 
 .remodal-confirm:hover,
 .remodal-confirm:focus {
-  background: #66bb6a;
+  background: {{ site.color.links-hover }};
+  font-weight: 800;
 }
 
 .remodal-cancel {

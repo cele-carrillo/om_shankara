@@ -1,0 +1,9 @@
+[X] Estilos de los modals de contacto
+[ ] Labels del form para IE? (placeholder may not work)
+[X] Tamanio de la imagen (compresion?)
+[ ] Probar en todos los browsers (browsershot)
+[X] Cambiar foto home
+[ ] Probar en los dos idiomas
+[X] Preparar link al server de booking
+[ ] Probar en mobile
+[X] Read less vuelve al tope de section

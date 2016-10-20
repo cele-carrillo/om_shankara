@@ -1,12 +1,27 @@
     <!-- Rolfing Section -->
+    {% assign section = site.t[page.lang].rolfing %}
     <section id="rolfing" class="content-section text-justify">
         <div class="rolfing-section">
+            <div class="black-overlay"></div>
             <div class="container-fluid">
                 <div class="col-lg-8 col-lg-offset-2">
-                    <img src="/img/rolfing-logo-{{ page.lang }}.png" class="yoga-title">
-                    {% for paragraph in site.t[page.lang].content_rolfing %}
+                    <img src="/img/rolfing-logo-{{ page.lang }}.png" class="yoga-title" alt="{{ section.title }}">
+                    {% for paragraph in section.content_intro %}
                         <p>{{ paragraph }}</p>
                     {% endfor %}
+                </div>
+                <div id="rolfing-more" class="col-lg-8 col-lg-offset-2 collapse">
+                    {% for paragraph in section.content_collapse %}
+                        <p>{{ paragraph }}</p>
+                    {% endfor %}
+                </div>
+                <div class="col-lg-8 col-lg-offset-2">
+                    {% for paragraph in section.content_footer %}
+                        <p>{{ paragraph }}</p>
+                    {% endfor %}
+                </div>
+                <div class="col-lg-8 col-lg-offset-2 text-right">  
+                    <p><a href="#rolfing" class="expander collapsed" txt-more="{{ site.t[page.lang].misc.read_more }}" txt-less="{{ site.t[page.lang].misc.read_less }}" data-toggle="collapse" data-target="#rolfing-more"></a></p>
                 </div>
             </div>
         </div>

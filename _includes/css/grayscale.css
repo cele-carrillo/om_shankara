@@ -28,9 +28,9 @@
 body {
     width: 100%;
     height: 100%;
-    font-family: Lora,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    color: #fff;
-    background-color: {{ site.color.primary-dark }};
+    font-family: futura-pt, sans-serif;
+    color: {{ site.color.primary-text }};
+    background-color: {{ site.color.primary-bg }};
 }
 
 html {
@@ -46,9 +46,28 @@ h5,
 h6 {
     margin: 0 0 35px;
     text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
+    
+}
+
+h1 {
+    font-family: "Montserrat";
     letter-spacing: 1px;
+    color: {{ site.color.theme-main }};
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: futura-pt;
+    color: {{ site.color.theme-main }};
+    font-size: 2.6em;
+    letter-spacing: 4px;
+    text-decoration: none;
+    line-height: .9em;
 }
 
 p {
@@ -75,7 +94,7 @@ a {
 a:hover,
 a:focus {
     text-decoration: none;
-    color: #11505d;
+    color: {{ site.color.links-hover }};
 }
 
 .light {
@@ -86,8 +105,7 @@ a:focus {
     margin-bottom: 0;
     border-bottom: 1px solid rgba(255,255,255,.3);
     text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    background-color: {{ site.color.primary-dark }};
+    background-color: {{ site.color.theme-main }};
 }
 
 .navbar-custom .navbar-brand {
@@ -113,7 +131,7 @@ a:focus {
 }
 
 .navbar-custom a {
-    color: #fff;
+    color: {{ site.color.lighter-text }};
 }
 
 .navbar-custom .nav li.active {
@@ -140,6 +158,7 @@ a:focus {
         border-bottom: 0;
         letter-spacing: 1px;
         background: 0 0;
+        background-color: rgba(0, 0, 0, 0.5);
         -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
         -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
         transition: background .5s ease-in-out,padding .5s ease-in-out;
@@ -147,7 +166,7 @@ a:focus {
 
     .top-nav-collapse {
         padding: 0;
-        background-color: {{ site.color.primary-dark }};
+        background-color: {{ site.color.theme-main }};
     }
 
     .navbar-custom.top-nav-collapse {
@@ -158,12 +177,12 @@ a:focus {
 .intro {
     display: table;
     width: 100%;
-    height: auto;
+    height: 100%;
     padding: 100px 0;
     text-align: center;
-    color: #fff;
+    color: {{ site.color.lighter-text }};
     background: url(/img/intro-bg.jpg) no-repeat bottom center scroll;
-    background-color: {{ site.color.primary-dark }};
+    background-color: black;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -180,11 +199,12 @@ a:focus {
 }
 
 .intro .intro-body .intro-text {
-    font-size: 18px;
+    font-size: 22px;
 }
 
 @media(min-width:767px) {
     .intro {
+        background: url(/img/intro-bg.jpg) no-repeat bottom center fixed;
         height: 100%;
         padding: 0;
     }
@@ -194,7 +214,7 @@ a:focus {
     }
 
     .intro .intro-body .intro-text {
-        font-size: 25px;
+        font-size: 30px;
     }
 }
 
@@ -203,10 +223,10 @@ a:focus {
     height: 70px;
     margin-top: 15px;
     padding: 7px 16px;
-    border: 2px solid #fff;
+    border: 2px solid {{ site.color.icons }};
     border-radius: 35px;
     font-size: 40px;
-    color: #fff;
+    color: {{ site.color.icons }};
     background: 0 0;
     -webkit-transition: background .3s ease-in-out;
     -moz-transition: background .3s ease-in-out;
@@ -216,7 +236,7 @@ a:focus {
 .btn-circle:hover,
 .btn-circle:focus {
     outline: 0;
-    color: #fff;
+    color: {{ site.color.icons }};
     background: rgba(255,255,255,.1);
 }
 
@@ -276,14 +296,14 @@ a:focus {
     padding: 50px 0;
     text-indent: 50px;
     width: 100%;
-    color: #fff;
+    color: {{ site.color.primary-text }};
 }
 .content-section h2 {
     text-align: left;
 }
 
 .yoga-section {
-    background-color: {{ site.color.primary-dark }};
+    background-color: {{ site.color.primary-bg }};
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -291,7 +311,7 @@ a:focus {
 }
 
 .about-section {
-    background-color: {{ site.color.primary-dark }};
+    background-color: {{ site.color.primary-bg }};
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -299,17 +319,58 @@ a:focus {
 }
 
 .rolfing-section {
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-    background: url(/img/rolfing-bg.png) no-repeat center center fixed;
-    background-color: {{ site.color.primary-dark }};
+    /*
+    text-shadow: -1px 0 {{ site.color.textshadow }}, 0 1px {{ site.color.textshadow }}, 1px 0 {{ site.color.textshadow }}, 0 -1px {{ site.color.textshadow }};
+    */
+    color: {{ site.color.lighter-text }};
+    background-color: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) );
+    background-image: url(/img/rolfing-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: scroll
+    background-color: black;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
 }
 
+@media(min-width:767px) {
+    .rolfing-section {
+        background-attachment: fixed;
+    }
+}
+
+div.white-overlay {
+    background-color: white;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+div.black-overlay {
+    color: {{ site.color.lighter-text }} !important;
+    background-color: black;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+div.rounded-corners {
+    border-radius: 25px;
+    border: 2px solid {{ site.color.theme-main }};
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+}
+
+#contact-wrapper {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
 .contact-section {
-    background-color: {{ site.color.primary-dark }};
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    /*background-color: {{ site.color.primary-bg }};*/
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -318,8 +379,7 @@ a:focus {
 
 #map {
     width: 100%;
-    height: 200px;
-    margin-top: 100px;
+    height: 750px;
 }
 
 @media(min-width:767px) {
@@ -331,18 +391,17 @@ a:focus {
     .rolfing-section,
     .about-section,
     .contact-section {
-        padding: 100px 0;
+        padding: 100px 0 10px 0;
     }
 
     #map {
-        height: 400px;
-        margin-top: 50px;
+        width: 100%;
+        height: 750px;
     }
 }
 
 .btn {
     text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 400;
     text-indent: 0;
     -webkit-transition: all .3s ease-in-out;
@@ -352,16 +411,25 @@ a:focus {
 
 .btn-default {
     border: 1px solid {{ site.color.links }};
-    color: {{ site.color.links }};
-    background-color: transparent;
+    outline: 0;
+    color: {{ site.color.primary-bg }};
+    background-color: {{ site.color.links }};
 }
 
 .btn-default:hover,
 .btn-default:focus {
-    border: 1px solid {{ site.color.links }};
-    outline: 0;
-    color: {{ site.color.primary-dark }};
-    background-color: {{ site.color.links }};
+    font-weight: 800;
+    color: {{ site.color.primary-bg }};
+    background-color: {{ site.color.links-hover }};
+}
+
+a.expander.collapsed:before
+{
+    content: attr(txt-more);
+}
+a.expander:before
+{
+    content: attr(txt-less);
 }
 
 ul.banner-social-buttons {
@@ -391,11 +459,13 @@ ul.banner-social-buttons li {
 }
 
 footer {
-    padding: 50px 0;
+    background-color: {{ site.color.theme-main }};
+    padding: 20px 0;
 }
 
 footer p {
     margin: 0;
+    color: {{ site.color.lighter-text }};
 }
 
 ::-moz-selection {
@@ -428,50 +498,56 @@ body {
     text-indent: 0px;
 }
 
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color: {{ site.color.theme-main }};
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color: {{ site.color.theme-main }};
+   opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color: {{ site.color.theme-main }};
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color: {{ site.color.theme-main }};
+}
+
 input,
 textarea,
 select {
     display: block;
     margin: 10px 0px 10px 0px;
-    border: 1px solid #111;
+    border-radius: 10px;
+    border: 2px solid {{ site.color.theme-main }};
     padding: 0.5em;
-    font-size: 15px;
+    font-size: 17px;
     line-height: 1.2em;
     max-width: 500px;
     width: 100%;
-    background: #444;
-    color: #fff;
+    background: #fff;
+    opacity: 0.8;
+    filter: alpha(opacity=80); /* For IE8 and earlier */
+    color: #000;
     font-family: helvetica, sans-serif;
-    background: -webkit-gradient(linear, left top, left bottom, from(#222), to(#444));
     -webkit-appearance: none;
-    /*box-shadow*/
-    -webkit-box-shadow: 1px 1px 1px #333;
-    -moz-box-shadow: 1px 1px 1px #333;
-    box-shadow: 1px 1px 1px #333;
 }
 input:focus,
 textarea:focus,
-select:focus { outline-color: #219ab3 }
+select:focus {
+    outline-color: {{ site.color.theme-main }}
+}
 textarea {
     height: 200px;
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #222), color-stop(0.05, #333));
-    background: -moz-gradient(linear, left top, left bottom, color-stop(0, #222), color-stop(0.05, #333));
-    background: -o-gradient(linear, left top, left bottom, color-stop(0, #222), color-stop(0.05, #333));
-    background: -ms-gradient(linear, left top, left bottom, color-stop(0, #222), color-stop(0.05, #333));
-    background: gradient(linear, left top, left bottom, color-stop(0, #222), color-stop(0.05, #333));
 }
 fieldset{
-border:0;
+    border:0;
 }
-input[type=text] { 
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #222), color-stop(0.12, #333));
-    background: -moz-gradient(linear, left top, left bottom, color-stop(0, #222), color-stop(0.12, #333));
-    background: -o-gradient(linear, left top, left bottom, color-stop(0, #222), color-stop(0.12, #333));
-    background: -ms-gradient(linear, left top, left bottom, color-stop(0, #222), color-stop(0.12, #333));
-    background:  gradient(linear, left top, left bottom, color-stop(0, #222), color-stop(0.12, #333));
-}
+
 input[type=submit] {
     width: auto;
+    opacity: 1;
+    filter: alpha(opacity=100);
 }
 
 .invalid-field {
