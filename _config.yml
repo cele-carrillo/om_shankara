@@ -25,6 +25,7 @@ color:
 home_text_1: 
 home_text_2: Shankara
 
+# Google maps
 map:
   api_key: AIzaSyAOoTRdEUmyIGq8p2zVNqAa8-n1VEtFs5s
   marker_lat: "-33.8748269"
@@ -32,6 +33,9 @@ map:
   center_lat: "-33.8704491"
   center_lng: "151.2048432"
   zoom: 15
+
+# Google analytics
+tracking_id: "UA-85978390-1"
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social: []
