@@ -356,7 +356,6 @@ div.rounded-corners {
     border-radius: 25px;
     border: 2px solid {{ site.color.theme-main }};
     background: rgba(255, 255, 255, 0.8);
-    padding: 20px;
 }
 
 #contact-wrapper {
