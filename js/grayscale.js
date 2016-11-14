@@ -7,7 +7,9 @@ $("ul.nav").on('activate.bs.scrollspy', function () {
 
    $("a.lang-choice").each(function() {
       var base = this.href.split("#")[0];
-      this.href = base.concat(hash);
+      if (base != null){
+        this.href = base.concat(hash);
+      }
     });
 });
 
