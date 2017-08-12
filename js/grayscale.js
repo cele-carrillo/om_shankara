@@ -13,6 +13,39 @@ $("ul.nav").on('activate.bs.scrollspy', function () {
     });
 });
 
+// jQuery to open promotion modal
+$(document).ready(function () {
+    var cookieName = "promo-shown";
+    
+    if (getCookie(cookieName) === "") {
+       $('[data-remodal-id=modal-promo]').remodal().open();
+       setCookie(cookieName, "true", 3600);
+    }
+});
+
+function setCookie(cname, cvalue, seconds) {
+    var date = new Date();
+    date.setTime(date.getTime() + (seconds*1000));
+    var expires = "expires="+ date.toUTCString();
+    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
+
+function getCookie(cname) {
+    var name = cname + "=";
+    var decodedCookie = decodeURIComponent(document.cookie);
+    var cookies = decodedCookie.split(';');
+    for(var i = 0; i < cookies.length; i++) {
+        var cookie = cookies[i];
+        while (cookie.charAt(0) == ' ') {
+            cookie = cookie.substring(1);
+        }
+        if (cookie.indexOf(name) == 0) {
+            return cookie.substring(name.length, cookie.length);
+        }
+    }
+    return "";
+}
+
 // jQuery to process the form
 $(document).ready(function() {
     $('#form-contact').submit(function(event) {

@@ -4,6 +4,9 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
+img.promo {
+    width: 100%;
+}
 
 .lang-selector {
     display: block;
