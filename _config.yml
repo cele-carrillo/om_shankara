@@ -28,11 +28,14 @@ home_text_2: Shankara
 # Google maps
 map:
   api_key: AIzaSyAOoTRdEUmyIGq8p2zVNqAa8-n1VEtFs5s
-  marker_lat: "-33.8748269"
-  marker_lng: "151.2227222"
   center_lat: "-33.8704491"
   center_lng: "151.2048432"
   zoom: 15
+  markers:
+    - lat: "-33.873524"
+      lng: "151.2268198"
+    - lat: "-33.8803277"
+      lng: "151.2074508"
 
 # Google analytics
 tracking_id: "UA-85978390-1"
