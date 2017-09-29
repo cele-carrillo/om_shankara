@@ -21,6 +21,9 @@ color:
   links-hover: '#15b8e4'
   icons: '#fff'
 
+# Promotion modal
+promo_enabled: false
+
 # Head settings
 home_text_1: 
 home_text_2: Shankara
