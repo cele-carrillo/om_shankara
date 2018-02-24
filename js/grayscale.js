@@ -13,16 +13,6 @@ $("ul.nav").on('activate.bs.scrollspy', function () {
     });
 });
 
-// jQuery to open promotion modal
-$(document).ready(function () {
-    var cookieName = "promo-shown";
-    
-    if (getCookie(cookieName) === "") {
-       $('[data-remodal-id=modal-promo]').remodal().open();
-       setCookie(cookieName, "true", 3600);
-    }
-});
-
 function setCookie(cname, cvalue, seconds) {
     var date = new Date();
     date.setTime(date.getTime() + (seconds*1000));
@@ -48,6 +38,16 @@ function getCookie(cname) {
 
 // jQuery to process the form
 $(document).ready(function() {
+
+    /* To open promotion modal
+    var cookieName = "promo-shown";
+    
+    if (getCookie(cookieName) === "") {
+       $('[data-remodal-id=modal-promo]').remodal().open();
+       setCookie(cookieName, "true", 3600);
+    }
+    */
+
     $('#form-contact').submit(function(event) {
         $form = $(this);
         var name = $('input[name=name]');
