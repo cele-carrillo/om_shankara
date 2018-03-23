@@ -119,6 +119,7 @@ t:
     contact_form:
       name: Name
       email: Email
+      phone: Phone
       question: Question
       subject: Enquiry OmShankara.com
       submit: Submit
@@ -185,6 +186,7 @@ t:
     contact_form:
       name: Nombre
       email: Email
+      phone: Teléfono
       question: Consulta
       subject: Consulta OmShankara.com
       submit: Enviar

@@ -52,6 +52,7 @@ $(document).ready(function() {
         $form = $(this);
         var name = $('input[name=name]');
         var email = $('input[name=_replyto]');
+        var phone = $('input[name=phone]');
         var question = $('textarea[name=question]');
 
         event.preventDefault();
@@ -63,6 +64,7 @@ $(document).ready(function() {
         var formData = {
             'name'         : name.val(),
             'email'        : email.val(),
+            'phone'        : phone.val(),
             'question'     : question.val(),
             '_gotcha'      : $('input[name=_gotcha]').val(),
             '_subject'     : $('input[name=_subject]').val()
@@ -80,6 +82,7 @@ $(document).ready(function() {
                 inst.open();
                 name.val("");
                 email.val("");
+                phone.val("");
                 question.val("");
             })
             .fail(function() {
