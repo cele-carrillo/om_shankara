@@ -39,14 +39,13 @@ function getCookie(cname) {
 // jQuery to process the form
 $(document).ready(function() {
 
-    /* To open promotion modal
+    // To open promotion modal
     var cookieName = "promo-shown";
     
     if (getCookie(cookieName) === "") {
        $('[data-remodal-id=modal-promo]').remodal().open();
-       setCookie(cookieName, "true", 3600);
+       setCookie(cookieName, "true", 1800);
     }
-    */
 
     $('#form-contact').submit(function(event) {
         $form = $(this);

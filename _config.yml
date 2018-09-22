@@ -22,7 +22,8 @@ color:
   icons: '#fff'
 
 # Promotion modal
-promo_enabled: false
+promo_enabled: true
+promo_img: /img/mind-body-spirit.png
 
 # Head settings
 home_text_1: 
