@@ -36,7 +36,7 @@
           <div class="col-lg-8 col-lg-offset-2">
     
             <div class"contact-form" id="contact-form" style="display:block;">
-              <form action="//formspree.io/{{ site.email }}" id="form-contact">
+              <form action="//formspree.io/{{ site.email }}" id="form-contact" method="POST">
                 <fieldset>
                   <input type="text" name="name" placeholder="{{ site.t[page.lang].contact_form.name }}">
                   <input type="email" name="_replyto" placeholder="{{ site.t[page.lang].contact_form.email }}">
