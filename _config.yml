@@ -36,10 +36,8 @@ map:
   center_lng: "151.2048432"
   zoom: 15
   markers:
-    - lat: "-33.873524"
-      lng: "151.2268198"
-    - lat: "-33.8803277"
-      lng: "151.2074508"
+    - lat: "-33.8747715"
+      lng: "151.2156434"
 
 # Google analytics
 tracking_id: "UA-85978390-1"
